@@ -1,0 +1,49 @@
+/* Contenedor principal centrado */
+.todo-container {
+  max-width: 500px;
+  margin: 50px auto;
+  font-family: sans-serif;
+  text-align: center;
+}
+
+/* Sección del input y botón */
+.input-section {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.input-section input {
+  padding: 8px;
+  width: 70%;
+}
+
+/* Lista sin puntos y sin padding */
+.todo-list {
+  list-style: none;
+  padding: 0;
+}
+
+/* Cada ítem de la tarea como caja con borde */
+.todo-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  border: 1px solid #000; /* Define el borde negro */
+  margin-bottom: 8px;      /* Separa cada tarea */
+  border-radius: 4px;
+}
+
+/* Ajuste del checkbox y botón para que no se vean gigantes */
+.todo-item input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+.todo-item button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.2rem;
+}
