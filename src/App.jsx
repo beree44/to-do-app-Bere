@@ -15,6 +15,7 @@ function App() {
     <input type="checkbox" />
     <span>Task N</span>
     <button>🗑️</button>
+    
   </li>
   <li className="todo-item">
     <input type="checkbox" />
