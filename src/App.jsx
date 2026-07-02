@@ -1,6 +1,7 @@
 
 import Button from './components/Button';
 import TaskItem from './components/TaskItem';
+import './styles/App.css';
 
 function App() {
   return (
