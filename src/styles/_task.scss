@@ -1,0 +1,43 @@
+@import 'variables';
+
+.todo-item {
+  display: flex;
+  align-items: center;
+  max-width: $max-width;
+  margin: 16px auto 8px auto; 
+  padding: $espaciado;        
+  background-color: $blanco-10; 
+  border-radius: $radio-borde;
+  
+  input[type="checkbox"] {
+    width: 24px;              
+    height: 24px;            
+    margin-right: $espaciado; 
+    cursor: pointer;
+  }
+
+  span {
+    flex-grow: 1;
+    font-size: 24px;          
+    color: $blanco;
+  }
+
+  .button-group {
+    display: flex;
+    gap: $espaciado;         
+  }
+}
+
+.icon-button {
+  width: $altura-boton;       
+  height: $altura-boton;      
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  border: 1px solid $blanco-20;
+  border-radius: $radio-borde;
+  color: $blanco;
+  cursor: pointer;
+  font-size: 24px;            
+}

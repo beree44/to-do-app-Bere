@@ -1,0 +1,25 @@
+@import 'variables';
+
+.add-task-container {
+  display: flex;
+  max-width: $max-width;
+  // Usamos $espaciado para cumplir la Grid de 8px
+  margin: $espaciado auto; 
+ 
+  padding: $espaciado $padding-lateral; 
+  gap: $espaciado; 
+
+  input {
+    flex-grow: 1;
+    height: $altura-boton; // 48px
+    background: transparent;
+    border: 1px solid $blanco-20;
+    color: $blanco;
+    padding: $espaciado ($espaciado * 2); 
+    font-size: 24px;
+    border-radius: $radio-borde; 
+    
+   
+    font-family: 'Roboto', sans-serif;
+  }
+}

@@ -3,7 +3,7 @@ import Button from '../Button';
 const TaskItem = ({ text, isCompleted, onDelete, onToggle }) => {
   return (
     <li className="todo-item">
-      {/* Checkbox para tachar */}
+      {/* Checkbox */}
       <input 
         type="checkbox" 
         checked={isCompleted} 
@@ -15,8 +15,12 @@ const TaskItem = ({ text, isCompleted, onDelete, onToggle }) => {
         {text}
       </span>
       
-      {/* Botón de eliminar */}
-      <Button onClick={onDelete}>🗑️</Button>
+      {/* Contenedor de botones con las clases correctas */}
+      <div className="button-group">
+  <Button className="icon-button" onClick={() => alert("Editar")}>🖊️</Button>
+  <Button className="icon-button" onClick={() => alert("Compartir")}>↳ ↰</Button>
+  <Button className="icon-button" onClick={onDelete}>🗑</Button>
+</div>
     </li>
   );
 };
